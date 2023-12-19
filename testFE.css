@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+}
+li {
+    list-style-type: none;
+}
+.sideBar{
+    min-height: 100vh;
+    width: 60%;
+    background-color: black;
+    color: white;
+}
+.sideBar li{
+    padding: 15px ;
+    border-bottom: 0.5px solid gray;
+    color: gray;
+}
+.sideBar .a:hover{
+    background-color: gray;
+    color: white;
+}
+.containers{
+    display: flex;
+}
+.contents{
+    padding: 30px 30px;
+    display: flex;
+    text-align: center;
+}
+.group1 img{
+    height: 100px;
+    width: 200px;
+}
+.group2{
+    margin: 30px;
+    background-color: rgb(234, 234, 234);
+    padding: 20px 177px;
+    font-size: 13px;
+}
+.group2a{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.group3{
+    display: flex;
+    font-size: 14px;
+    padding: 0 20px;
+}
+.group3Item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.group3Item>p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.group3Item{
+    margin: 0 10px;
+    overflow: hidden;   
+}
+.group3Item>div{
+    margin-top: 15px;
+}
+.group3Item>div p{
+    text-align: left;
+    margin: 0;
+}
+.group3Item img{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    left: 0;
+    height: 100px;
+    width: 100px;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    margin-top: 100px;
+    padding: 20px 50px;
+    border-top: 1px solid rgb(214, 212, 212) ;
+    font-size: small;
+    color: gray;
+}
+@media screen and (max-width: 1024px) {
+    .group2{
+        padding: 20px 50px;
+    }
+    .group3Item>p{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .group3Item img{
+        height: 90px;
+        width: 90px;
+    }
+    .group3Item>div p{
+        font-size: 13.5px;
+    }
+    .footer{
+        position: absolute;
+    }
+    
+}
+@media screen and (max-width: 440px){
+    .contents{
+        padding: 30px 0;
+    }
+    .group1 img{
+        height: 70px;
+        width: 150px;
+    }
+    .group2{
+        padding: 20px 30px;
+        background-color: rgb(234, 234, 234);
+        font-size: 12px;
+    }
+    .group2a{
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .group3Item{
+        margin: 0 5px;
+         
+    }
+    .group3Item>p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .group3Item img{
+        height: 90px;
+        width: 90px;
+    }
+    .group3Item>div p{
+        font-size: 10px;
+    }
+    .footer{
+        position: relative;
+    }
+}
